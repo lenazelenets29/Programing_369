@@ -22,7 +22,6 @@
             ├── README.md
             ├── doc/
             │   ├── lab_10.md
-            │   └── lab_10.pdf
             ├──└── src/
             │       └── main.c
 ```
@@ -42,7 +41,6 @@
             ├── README.md
             ├── doc/
             │   ├── lab_10.md
-            │   └── lab_10.pdf
             ├──└── src/
             │       └── main.c
 ```
@@ -63,7 +61,6 @@
             ├── README.md
             ├── doc/
             │   ├── lab_10.md
-            │   └── lab_10.pdf
             ├──└── src/
             │       └── main.c
 ```
