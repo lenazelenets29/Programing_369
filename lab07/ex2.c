@@ -2,18 +2,18 @@
    	#include <math.h>
     	#include <stdbool.h>
 	#define SIZE 23
-/ * *
+/**
 *@file ex2.c Реалізувати код таким чином, щоб у заданому тексті знайти кільксть слів за умови, що між словами може бути будь-яка кількість пропусків
 */
 
-/ * *
+/**
 * @param sentence[] масив, у якому рахується кількість слів 
-* /
+*/
     
 int Count_word(char sentence[]); // обьявление функции
-/ * * 
+/** 
 головна функція {задає текст і рахує в ньому кількість слів}
-* /
+*/
 int main() {
         char sentence[SIZE] = { " One  hundred  ninety  " };
         int count_word = Count_word(sentence);
