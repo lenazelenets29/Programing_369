@@ -3,13 +3,14 @@
 #include <stdbool.h>
 #define N 10
 int main() {
-    srand(time(NULL));
-    int* arr = (int*)malloc(sizeof(int) * N);
+    srand((unsigned int)time(NULL));
+    // int* arr = (int*)malloc(sizeof(int) * N);
+    int arr[N] = { 0 };
     for (int j = 0; j < N; j++) {
         *(arr + j) = rand() % 10;
     }
     bool flag = true;
-    int* res_arr = (int*)malloc(sizeof(int));
+    int *res_arr = (int*)malloc(sizeof(int) * N);
     int count_pairs = 0;
     int check_numb = 0;
     int count_check_numb;
@@ -37,7 +38,7 @@ int main() {
                 }
 
             }
-            int* temp = (int*)malloc(sizeof(int) * count_pairs * 2);
+            int *temp = (int*)malloc(sizeof(int) * count_pairs * 2);
             for (int l = 0; l < count_pairs * 2; l++)
             {
                 *(temp + l) = *(res_arr + l);

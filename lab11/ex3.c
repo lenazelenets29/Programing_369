@@ -13,7 +13,7 @@ int main() {
         *(arr + j) = rand() % 30;
     }
     for (int i = 0; i < N - 1; i++) {
-        if ((arr + i) < *(arr + i + 1)) {
+        if ((arr + i) < (arr + i + 1)) {
             if (!flag) {
                 start = i;
             }
@@ -31,7 +31,7 @@ int main() {
 
     }
     count++;
-    int* res_arr = (int*)malloc(sizeof(int) * count);
+    int *res_arr = (int*)malloc(sizeof(int) * count);
     for (int i = start, j = 0; j <= count; i++, j++) {
         *(res_arr + j) = *(arr + i);
     }

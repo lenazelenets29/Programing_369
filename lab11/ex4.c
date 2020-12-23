@@ -10,7 +10,7 @@ int main() {
             *(*(arr + i) + j) = rand() % 10;
         }
     }
-    int res_arr[N];
+    int res_arr[N] = { 0 };
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             if (i == j) {
@@ -29,4 +29,3 @@ int main() {
     }
     return 0;
 }
-

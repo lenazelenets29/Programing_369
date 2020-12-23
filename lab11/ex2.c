@@ -3,8 +3,9 @@
 #include <stdbool.h>
 #define N 10
 int main() {
-    srand(time(NULL));
-    int* arr = (int*)malloc(sizeof(int) * N);
+    // srand(time(NULL));
+    // int* arr = (int*)malloc(sizeof(int) * N);
+    int arr[N] = { 0 };
     for (int j = 0; j < N; j++) {
         *(arr + j) = rand() % 61 - 30;
     }
@@ -14,7 +15,7 @@ int main() {
     int size = 0;
     int count_sum = 0;
     int* size_arr = (int*)malloc(sizeof(int));
-    int* sum_arr = (int*)malloc(sizeof(int));
+    int* sum_arr = (int*)malloc(sizeof(int) * 2);
     for (int i = 0; i < N; i++) {
         if (*(arr + i) > 0) {
             if (!flag) {
