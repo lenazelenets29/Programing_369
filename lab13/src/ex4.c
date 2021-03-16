@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <locale.h>
 #define N 10
-#define SIZE 51
+#define SIZE 86
 
 
 int main() {
