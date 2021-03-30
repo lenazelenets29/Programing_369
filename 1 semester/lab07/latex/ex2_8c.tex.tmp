@@ -1,0 +1,44 @@
+\hypertarget{ex2_8c}{}\doxysection{ex2.\+c File Reference}
+\label{ex2_8c}\index{ex2.c@{ex2.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for ex2.\+c\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ex2_8c_a70ed59adcb4159ac551058053e649640}\label{ex2_8c_a70ed59adcb4159ac551058053e649640}} 
+\#define {\bfseries S\+I\+ZE}~23
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{ex2_8c_a70483fc98036adcd3a067cf598e7461e}{Count\+\_\+word}} (char sentence\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{ex2_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Реалізувати код таким чином, щоб у заданому тексті знайти кільксть слів за умови, що між словами може бути будь-\/яка кількість пропусків 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ex2_8c_a70483fc98036adcd3a067cf598e7461e}\label{ex2_8c_a70483fc98036adcd3a067cf598e7461e}} 
+\index{ex2.c@{ex2.c}!Count\_word@{Count\_word}}
+\index{Count\_word@{Count\_word}!ex2.c@{ex2.c}}
+\doxysubsubsection{\texorpdfstring{Count\_word()}{Count\_word()}}
+{\footnotesize\ttfamily int Count\+\_\+word (\begin{DoxyParamCaption}\item[{char}]{sentence\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sentence\mbox{[}$\,$\mbox{]}} & масив, у якому рахується кількість слів \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ex2_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{ex2_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{ex2.c@{ex2.c}!main@{main}}
+\index{main@{main}!ex2.c@{ex2.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+головна функція \{задає текст і рахує в ньому кількість слів\} 
