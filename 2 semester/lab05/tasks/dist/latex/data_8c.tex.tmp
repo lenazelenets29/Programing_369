@@ -1,0 +1,29 @@
+\hypertarget{data_8c}{}\doxysection{Файл data.\+c}
+\label{data_8c}\index{data.c@{data.c}}
+{\ttfamily \#include \char`\"{}data.\+h\char`\"{}}\newline
+Діаграма включених заголовочних файлів для data.\+c\+:
+% FIG 0
+\doxysubsection*{Функції}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{data_8c_ae44c09204ef424e8aa1ab999f3750b36}{get\+Str\+Num}} (char $\ast$fname)
+\item 
+\mbox{\hyperlink{data_8h_a7ddf7ad711f86064b282da3906adbf38}{train}} $\ast$ \mbox{\hyperlink{data_8c_a1fbc0a3bdff86fe47cffd1f3b1d43853}{read\+Str}} (char $\ast$fname)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Опис функцій}
+\mbox{\Hypertarget{data_8c_ae44c09204ef424e8aa1ab999f3750b36}\label{data_8c_ae44c09204ef424e8aa1ab999f3750b36}} 
+\index{data.c@{data.c}!getStrNum@{getStrNum}}
+\index{getStrNum@{getStrNum}!data.c@{data.c}}
+\doxysubsubsection{\texorpdfstring{getStrNum()}{getStrNum()}}
+{\footnotesize\ttfamily int get\+Str\+Num (\begin{DoxyParamCaption}\item[{char $\ast$}]{fname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{data_8c_a1fbc0a3bdff86fe47cffd1f3b1d43853}\label{data_8c_a1fbc0a3bdff86fe47cffd1f3b1d43853}} 
+\index{data.c@{data.c}!readStr@{readStr}}
+\index{readStr@{readStr}!data.c@{data.c}}
+\doxysubsubsection{\texorpdfstring{readStr()}{readStr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{data_8h_a7ddf7ad711f86064b282da3906adbf38}{train}}$\ast$ read\+Str (\begin{DoxyParamCaption}\item[{char $\ast$}]{fname }\end{DoxyParamCaption})}
+
+Граф всіх викликів цієї функції\+:
+% FIG 1

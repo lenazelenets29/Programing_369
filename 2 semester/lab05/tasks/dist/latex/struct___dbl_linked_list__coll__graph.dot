@@ -1,0 +1,14 @@
+digraph "_DblLinkedList"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{_DblLinkedList\n|+ size\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +head\n+tail" ,arrowhead="odiamond"];
+  Node2 [label="{_Node\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct___node.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +value" ,arrowhead="odiamond"];
+  Node3 [label="{_train\n|+ number\l+ repairs\l+ carts\l+ type\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__train.html",tooltip=" "];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +move" ,arrowhead="odiamond"];
+  Node4 [label="{_way\n|+ start\l+ finish\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct__way.html",tooltip=" "];
+  Node2 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +next\n+prev" ,arrowhead="odiamond"];
+}
