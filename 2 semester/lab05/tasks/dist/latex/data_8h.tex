@@ -1,0 +1,56 @@
+\hypertarget{data_8h}{}\doxysection{Файл data.\+h}
+\label{data_8h}\index{data.h@{data.h}}
+{\ttfamily \#include \char`\"{}stdio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdlib.\+h\char`\"{}}\newline
+\doxysubsection*{Структури даних}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__way}{\+\_\+way}}
+\item 
+struct \mbox{\hyperlink{struct__train}{\+\_\+train}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Визначення типів}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct__way}{\+\_\+way}} \mbox{\hyperlink{data_8h_a738356c24ea3ef814e611186d24de2cf}{way}}
+\item 
+typedef struct \mbox{\hyperlink{struct__train}{\+\_\+train}} \mbox{\hyperlink{data_8h_a7ddf7ad711f86064b282da3906adbf38}{train}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Функції}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{data_8h_ae44c09204ef424e8aa1ab999f3750b36}{get\+Str\+Num}} (char $\ast$fname)
+\item 
+\mbox{\hyperlink{data_8h_a7ddf7ad711f86064b282da3906adbf38}{train}} $\ast$ \mbox{\hyperlink{data_8h_a1fbc0a3bdff86fe47cffd1f3b1d43853}{read\+Str}} (char $\ast$fname)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Опис визначень типів}
+\mbox{\Hypertarget{data_8h_a7ddf7ad711f86064b282da3906adbf38}\label{data_8h_a7ddf7ad711f86064b282da3906adbf38}} 
+\index{data.h@{data.h}!train@{train}}
+\index{train@{train}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{train}{train}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__train}{\+\_\+train}} \mbox{\hyperlink{data_8h_a7ddf7ad711f86064b282da3906adbf38}{train}}}
+
+\mbox{\Hypertarget{data_8h_a738356c24ea3ef814e611186d24de2cf}\label{data_8h_a738356c24ea3ef814e611186d24de2cf}} 
+\index{data.h@{data.h}!way@{way}}
+\index{way@{way}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{way}{way}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct__way}{\+\_\+way}} \mbox{\hyperlink{data_8h_a738356c24ea3ef814e611186d24de2cf}{way}}}
+
+
+
+\doxysubsection{Опис функцій}
+\mbox{\Hypertarget{data_8h_ae44c09204ef424e8aa1ab999f3750b36}\label{data_8h_ae44c09204ef424e8aa1ab999f3750b36}} 
+\index{data.h@{data.h}!getStrNum@{getStrNum}}
+\index{getStrNum@{getStrNum}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{getStrNum()}{getStrNum()}}
+{\footnotesize\ttfamily int get\+Str\+Num (\begin{DoxyParamCaption}\item[{char $\ast$}]{fname }\end{DoxyParamCaption})}
+
+Функція отримання номера потягу.\mbox{\Hypertarget{data_8h_a1fbc0a3bdff86fe47cffd1f3b1d43853}\label{data_8h_a1fbc0a3bdff86fe47cffd1f3b1d43853}} 
+\index{data.h@{data.h}!readStr@{readStr}}
+\index{readStr@{readStr}!data.h@{data.h}}
+\doxysubsubsection{\texorpdfstring{readStr()}{readStr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{data_8h_a7ddf7ad711f86064b282da3906adbf38}{train}}$\ast$ read\+Str (\begin{DoxyParamCaption}\item[{char $\ast$}]{fname }\end{DoxyParamCaption})}
+
+Функція читання з файлу.

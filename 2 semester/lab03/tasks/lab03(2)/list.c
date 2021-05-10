@@ -24,7 +24,7 @@ void deleteDblLinkedList(DblLinkedList **list){
 }
 
 
-void pushFront(DblLinkedList *list, void *data){ // вставка
+void pushFront(DblLinkedList *list, void *data){
     Node *tmp = (Node*) malloc(sizeof(Node));
     if (tmp == NULL) {
         exit(1);
@@ -43,7 +43,7 @@ void pushFront(DblLinkedList *list, void *data){ // вставка
     list->size++;
 }
 
-void* popFront(DblLinkedList *list){ // удаление начала
+void* popFront(DblLinkedList *list){
     Node *prev;
     void *tmp;
     if (list->head == NULL) {
@@ -65,7 +65,7 @@ void* popFront(DblLinkedList *list){ // удаление начала
     return tmp;
 }
 
-void pushBack(DblLinkedList *list, train *value){ // вставка с конца
+void pushBack(DblLinkedList *list, train *value){
     Node *tmp = (Node*) malloc(sizeof(Node));
     if (tmp == NULL) {
         exit(3);
