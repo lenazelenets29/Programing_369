@@ -5,7 +5,7 @@
 
 DblLinkedList *run_command(DblLinkedList *list);
 
-int main(){ /// Дана функція викликає функції знаходження номеру потяга, считування даних з файлу та перетворення з масиву в список. Далі викликається функція `run_command`для вибору виконання конкретних поставлених перед нами задач.
+int main(){/// this is main
     #ifdef DEBUG
 		printf("Debug enabled\n");
         const time_t timer = time(NULL);
@@ -26,7 +26,7 @@ int main(){ /// Дана функція викликає функції знах
     return 0;
 }
 
-DblLinkedList *run_command(DblLinkedList *list){ /// Призначення даної функції полягає у тому, що через консоль вводиться команда(під кожною з них розуміються функції), яка розпочинає виконання конкретної потрібної нам задачі. 
+DblLinkedList *run_command(DblLinkedList *list){
     char type_com[15];
     printf("Set command:> ");
     scanf("%s", type_com);

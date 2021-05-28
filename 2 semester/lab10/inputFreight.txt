@@ -1,0 +1,3 @@
+A1000 y 20 Ukraine Germany Heat Wood 15000
+A1001 n 15 Russia Ukraine Electro Coal 22000
+A1002 y 5 Poland Germany Heat Wood 13000

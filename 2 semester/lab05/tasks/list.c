@@ -1,6 +1,6 @@
 #include "list.h"
 
-DblLinkedList* createDblLinkedList(){ /// Ця функція створює екземпляр структури DblLinkedList. Тобто виділяє пам’ять на список, оголошує змінну його розміру, а також оголошує, що `head` та `tail` вказують на NULL, бо поки що наш список є пустим.
+DblLinkedList* createDblLinkedList(){
     DblLinkedList *tmp = (DblLinkedList*) malloc(sizeof(DblLinkedList));
     tmp->size = 0;
     tmp->head = tmp->tail = NULL;
@@ -8,7 +8,7 @@ DblLinkedList* createDblLinkedList(){ /// Ця функція створює е�
     return tmp;
 }
 
-void deleteDblLinkedList(DblLinkedList **list){ /// Дана функція реалізовує видалення двонапрямленого списку.
+void deleteDblLinkedList(DblLinkedList **list){
     Node *tmp = (*list)->head;
     Node *next = NULL;
     while (tmp) {
@@ -21,7 +21,7 @@ void deleteDblLinkedList(DblLinkedList **list){ /// Дана функція ре
 }
 
 
-void pushFront(DblLinkedList *list, void *data){ /// Дана функція реалізовує вставку в початок двонапрямленого списку.
+void pushFront(DblLinkedList *list, void *data){///This is push
     Node *tmp = (Node*) malloc(sizeof(Node));
     if (tmp == NULL) {
         exit(1);
@@ -40,7 +40,7 @@ void pushFront(DblLinkedList *list, void *data){ /// Дана функція р�
     list->size++;
 }
 
-void* popFront(DblLinkedList *list){ /// Дана функція реалізовує видалення з початку двонапрямленого списку.
+void* popFront(DblLinkedList *list){
     Node *prev;
     void *tmp;
     if (list->head == NULL) {
@@ -62,7 +62,7 @@ void* popFront(DblLinkedList *list){ /// Дана функція реалізо�
     return tmp;
 }
 
-void pushBack(DblLinkedList *list, train *value){ /// Дана функція реалізовує вставку в кінець двонапрямленого списку.
+void pushBack(DblLinkedList *list, train *value){
     Node *tmp = (Node*) malloc(sizeof(Node));
     if (tmp == NULL) {
         exit(3);
@@ -81,7 +81,7 @@ void pushBack(DblLinkedList *list, train *value){ /// Дана функція р
     list->size++;
 }
 
-void* popBack(DblLinkedList *list){ /// Дана функція реалізовує видалення з кінця двонапрямленого списку.
+void* popBack(DblLinkedList *list){
     Node *next;
     void *tmp;
     if (list->tail == NULL) {
@@ -103,7 +103,7 @@ void* popBack(DblLinkedList *list){ /// Дана функція реалізов
     return tmp;
 }
 
-Node* getNth(DblLinkedList *list, size_t index) { /// Дана функція реалізовує отримання n-го елементу. У залежності від індекса можемо проходитися по списку або з початку в кінець, або з кінця на початок. Це дозволяє використовувати в половину менше проходів по списку.
+Node* getNth(DblLinkedList *list, size_t index) {
     Node *tmp = NULL;
     size_t i;
      
@@ -126,7 +126,7 @@ Node* getNth(DblLinkedList *list, size_t index) { /// Дана функція р
     return tmp;
 }
 
-void insert(DblLinkedList *list, size_t index, train *value){ /// Дана функція реалізовує вставку вузла в список.
+void insert(DblLinkedList *list, size_t index, train *value){
     #ifdef DEBUG
 		printf("Function insert -----\n");
         const time_t timer = time(NULL);
@@ -157,7 +157,7 @@ void insert(DblLinkedList *list, size_t index, train *value){ /// Дана фу�
     list->size++;
 }
 
-void* deleteNth(DblLinkedList *list, size_t index){ /// Дана функція реалізовує видалення вузла із списку.
+void* deleteNth(DblLinkedList *list, size_t index){
     #ifdef DEBUG
 		printf("Function deleteNth -----\n");
         const time_t timer = time(NULL);
@@ -195,7 +195,7 @@ void printTrain(train *value){
     printf("%s %c %i %s %s %s\n", value->number, value->repairs, value->carts, value->move.start, value->move.finish, value->type);
 }
 
-void printDblLinkedList(DblLinkedList *list){ /// Дана функція виводить двонаправлений список потягів на екран. Виведення здійснюється шляхом друку поелементно.
+void printDblLinkedList(DblLinkedList *list){
     #ifdef DEBUG
 		printf("Function printDbLinkedList -----\n");
         const time_t timer = time(NULL);
@@ -209,7 +209,7 @@ void printDblLinkedList(DblLinkedList *list){ /// Дана функція вив
     printf("\n");
 }
 
-void fprintTrain(train *value, char *fname){ /// Дана функція реалізовує відкриття файлу в режимі читання та запису. Виведення в файл структур за допомогою функції `fprintf`.
+void fprintTrain(train *value, char *fname){
     FILE *out_t;
     if((out_t = fopen(fname, "a")) == NULL) {
         printf("Cannot open file.\n");
@@ -219,7 +219,7 @@ void fprintTrain(train *value, char *fname){ /// Дана функція реа�
     fclose(out_t);
 }
 
-void fprintDblLinkedList(DblLinkedList *list, char *fname){ /// Дана функція реалізовує відкриття файлу в режимі запису. І якщо список існує(тобто він не пустий), то проходиться по всьому списку і виводиться за допомогою функції `fprintTrain`.
+void fprintDblLinkedList(DblLinkedList *list, char *fname){
     #ifdef DEBUG
 		printf("Function fprintDbLinkedList -----\n");
         const time_t timer = time(NULL);
@@ -238,7 +238,7 @@ void fprintDblLinkedList(DblLinkedList *list, char *fname){ /// Дана фун�
     }
 }
 
-DblLinkedList* fromArray(train *arr, size_t n, size_t size) { /// Дана функція створює список з масиву. Спочатку йде перевірка чи не є пустим масив, і потім з цього масиву утворюється список за допомогою функції `createDblLinkedList`.
+DblLinkedList* fromArray(train *arr, size_t n, size_t size) {
     DblLinkedList *tmp = NULL;
     size_t i = 0;
     if (arr == NULL) {
@@ -254,7 +254,7 @@ DblLinkedList* fromArray(train *arr, size_t n, size_t size) { /// Дана фу�
     return tmp;
 }
 
-DblLinkedList* FilterDblLinkedList(DblLinkedList *list, char criterion, char *filter){ /// Дана функція реалізовує пошук за певним вказаним нами критерієм.
+DblLinkedList* FilterDblLinkedList(DblLinkedList *list, char criterion, char *filter){
     #ifdef DEBUG
 		printf("Function FilterDbLinkedList-----\n");
         const time_t timer = time(NULL);
@@ -314,7 +314,7 @@ DblLinkedList* FilterDblLinkedList(DblLinkedList *list, char criterion, char *fi
     return temp;
 }
 
-int sortChar(char * current, char * next, int poz, int len){ /// Дана функція реалізовує сортування.
+int sortChar(char * current, char * next, int poz, int len){
     int r = 0;
     if(current[poz] > next[poz]){
         return 1;
@@ -330,7 +330,7 @@ int sortChar(char * current, char * next, int poz, int len){ /// Дана фун
     }
 }
 
-void insertBeforeElement(DblLinkedList *list, Node* elm, void *value){ /// Дана функція реалізовує вставку до вказаного нами елемента.
+void insertBeforeElement(DblLinkedList *list, Node* elm, void *value){
     Node *ins = NULL;
     if (elm == NULL) {
         exit(6);
@@ -350,8 +350,8 @@ void insertBeforeElement(DblLinkedList *list, Node* elm, void *value){ /// Да�
     list->size++;
 }
 
-void insertionSort(DblLinkedList **list, char criterion){ /// Дана функція реалізовує сортування вставками за певним вказаним критерієм.
-    #ifdef DEBUG 
+void insertionSort(DblLinkedList **list, char criterion){
+    #ifdef DEBUG
 		printf("Function insertionSort -----\n");
         const time_t timer = time(NULL);
         printf("%s\n", ctime(&timer));
@@ -465,7 +465,7 @@ void insertionSort(DblLinkedList **list, char criterion){ /// Дана функ�
     *list = out;
 }
 
-long currentTimeMillis() {  /// Переведення часу в мілісекунди.  
+long currentTimeMillis() {    
     struct timeval time;
     mingw_gettimeofday(&time, NULL); //note: how c functions returns structures !
     return time.tv_sec * 1000 + time.tv_usec / 1000;

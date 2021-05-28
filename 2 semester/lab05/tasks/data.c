@@ -1,6 +1,6 @@
 #include "data.h"
 
-int getStrNum(char * fname){ /// Функція отримання номера потягу.
+int getStrNum(char * fname){
     FILE *info;
     if((info = fopen(fname, "r")) == NULL) {
         printf("Cannot open file.\n");
@@ -14,7 +14,7 @@ int getStrNum(char * fname){ /// Функція отримання номера 
     return N;
 }
 
-train *readStr(char * fname){ /// Функція читання з файлу.
+train *readStr(char * fname){
     FILE *info;
     if((info = fopen(fname, "r")) == NULL) {
         printf("Cannot open file.\n");

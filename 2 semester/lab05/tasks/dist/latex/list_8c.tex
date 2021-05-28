@@ -51,92 +51,91 @@ long \mbox{\hyperlink{list_8c_a12d5b6421b1b4450fbbf7817ad214220}{current\+Time\+
 \doxysubsubsection{\texorpdfstring{createDblLinkedList()}{createDblLinkedList()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}}$\ast$ create\+Dbl\+Linked\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Ця функція створює екземпляр структури Dbl\+Linked\+List. Тобто виділяє пам’ять на список, оголошує змінну його розміру, а також оголошує, що {\ttfamily head} та {\ttfamily tail} вказують на NULL, бо поки що наш список є пустим.\mbox{\Hypertarget{list_8c_a12d5b6421b1b4450fbbf7817ad214220}\label{list_8c_a12d5b6421b1b4450fbbf7817ad214220}} 
+\mbox{\Hypertarget{list_8c_a12d5b6421b1b4450fbbf7817ad214220}\label{list_8c_a12d5b6421b1b4450fbbf7817ad214220}} 
 \index{list.c@{list.c}!currentTimeMillis@{currentTimeMillis}}
 \index{currentTimeMillis@{currentTimeMillis}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{currentTimeMillis()}{currentTimeMillis()}}
 {\footnotesize\ttfamily long current\+Time\+Millis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Переведення часу в мілісекунди. ~\newline
 \mbox{\Hypertarget{list_8c_ac5db0a6aa8b023ce62a70d6179404a4f}\label{list_8c_ac5db0a6aa8b023ce62a70d6179404a4f}} 
 \index{list.c@{list.c}!deleteDblLinkedList@{deleteDblLinkedList}}
 \index{deleteDblLinkedList@{deleteDblLinkedList}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{deleteDblLinkedList()}{deleteDblLinkedList()}}
 {\footnotesize\ttfamily void delete\+Dbl\+Linked\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$$\ast$}]{list }\end{DoxyParamCaption})}
 
-Дана функція реалізовує видалення двонапрямленого списку.\mbox{\Hypertarget{list_8c_a4cbd68aa7be7009c429ba36c7c9991d5}\label{list_8c_a4cbd68aa7be7009c429ba36c7c9991d5}} 
+\mbox{\Hypertarget{list_8c_a4cbd68aa7be7009c429ba36c7c9991d5}\label{list_8c_a4cbd68aa7be7009c429ba36c7c9991d5}} 
 \index{list.c@{list.c}!deleteNth@{deleteNth}}
 \index{deleteNth@{deleteNth}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{deleteNth()}{deleteNth()}}
 {\footnotesize\ttfamily void$\ast$ delete\+Nth (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$}]{list,  }\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
 
-Дана функція реалізовує видалення вузла із списку.\mbox{\Hypertarget{list_8c_a275351f17e42ad9e32a79cd71db8275e}\label{list_8c_a275351f17e42ad9e32a79cd71db8275e}} 
+\mbox{\Hypertarget{list_8c_a275351f17e42ad9e32a79cd71db8275e}\label{list_8c_a275351f17e42ad9e32a79cd71db8275e}} 
 \index{list.c@{list.c}!FilterDblLinkedList@{FilterDblLinkedList}}
 \index{FilterDblLinkedList@{FilterDblLinkedList}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{FilterDblLinkedList()}{FilterDblLinkedList()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}}$\ast$ Filter\+Dbl\+Linked\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$}]{list,  }\item[{char}]{criterion,  }\item[{char $\ast$}]{filter }\end{DoxyParamCaption})}
 
-Дана функція реалізовує пошук за певним вказаним нами критерієм.\mbox{\Hypertarget{list_8c_aff7e22ecbaf0510bb52ccd8cf18b1a13}\label{list_8c_aff7e22ecbaf0510bb52ccd8cf18b1a13}} 
+\mbox{\Hypertarget{list_8c_aff7e22ecbaf0510bb52ccd8cf18b1a13}\label{list_8c_aff7e22ecbaf0510bb52ccd8cf18b1a13}} 
 \index{list.c@{list.c}!fprintDblLinkedList@{fprintDblLinkedList}}
 \index{fprintDblLinkedList@{fprintDblLinkedList}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{fprintDblLinkedList()}{fprintDblLinkedList()}}
 {\footnotesize\ttfamily void fprint\+Dbl\+Linked\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$}]{list,  }\item[{char $\ast$}]{fname }\end{DoxyParamCaption})}
 
-Дана функція реалізовує відкриття файлу в режимі запису. І якщо список існує(тобто він не пустий), то проходиться по всьому списку і виводиться за допомогою функції {\ttfamily fprint\+Train}.\mbox{\Hypertarget{list_8c_abb2fbfedce9f589dcf7520618bcee767}\label{list_8c_abb2fbfedce9f589dcf7520618bcee767}} 
+\mbox{\Hypertarget{list_8c_abb2fbfedce9f589dcf7520618bcee767}\label{list_8c_abb2fbfedce9f589dcf7520618bcee767}} 
 \index{list.c@{list.c}!fprintTrain@{fprintTrain}}
 \index{fprintTrain@{fprintTrain}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{fprintTrain()}{fprintTrain()}}
 {\footnotesize\ttfamily void fprint\+Train (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{data_8h_a7ddf7ad711f86064b282da3906adbf38}{train}} $\ast$}]{value,  }\item[{char $\ast$}]{fname }\end{DoxyParamCaption})}
 
-Дана функція реалізовує відкриття файлу в режимі читання та запису. Виведення в файл структур за допомогою функції {\ttfamily fprintf}.\mbox{\Hypertarget{list_8c_a3679ee943bb2c3f5a4b3f9660acd218d}\label{list_8c_a3679ee943bb2c3f5a4b3f9660acd218d}} 
+\mbox{\Hypertarget{list_8c_a3679ee943bb2c3f5a4b3f9660acd218d}\label{list_8c_a3679ee943bb2c3f5a4b3f9660acd218d}} 
 \index{list.c@{list.c}!fromArray@{fromArray}}
 \index{fromArray@{fromArray}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{fromArray()}{fromArray()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}}$\ast$ from\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{data_8h_a7ddf7ad711f86064b282da3906adbf38}{train}} $\ast$}]{arr,  }\item[{size\+\_\+t}]{n,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
 
-Дана функція створює список з масиву. Спочатку йде перевірка чи не є пустим масив, і потім з цього масиву утворюється список за допомогою функції {\ttfamily create\+Dbl\+Linked\+List}.\mbox{\Hypertarget{list_8c_a48d23a7f27e3a5436c27546044947ccf}\label{list_8c_a48d23a7f27e3a5436c27546044947ccf}} 
+\mbox{\Hypertarget{list_8c_a48d23a7f27e3a5436c27546044947ccf}\label{list_8c_a48d23a7f27e3a5436c27546044947ccf}} 
 \index{list.c@{list.c}!getNth@{getNth}}
 \index{getNth@{getNth}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{getNth()}{getNth()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{list_8h_a8ff62746a396b270606ff04818b7e4ac}{Node}}$\ast$ get\+Nth (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$}]{list,  }\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
 
-Дана функція реалізовує отримання n-\/го елементу. У залежності від індекса можемо проходитися по списку або з початку в кінець, або з кінця на початок. Це дозволяє використовувати в половину менше проходів по списку.\mbox{\Hypertarget{list_8c_ae24b31ecc19d6be193dfd8c91ed2b1f9}\label{list_8c_ae24b31ecc19d6be193dfd8c91ed2b1f9}} 
+\mbox{\Hypertarget{list_8c_ae24b31ecc19d6be193dfd8c91ed2b1f9}\label{list_8c_ae24b31ecc19d6be193dfd8c91ed2b1f9}} 
 \index{list.c@{list.c}!insert@{insert}}
 \index{insert@{insert}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{insert()}{insert()}}
 {\footnotesize\ttfamily void insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$}]{list,  }\item[{size\+\_\+t}]{index,  }\item[{\mbox{\hyperlink{data_8h_a7ddf7ad711f86064b282da3906adbf38}{train}} $\ast$}]{value }\end{DoxyParamCaption})}
 
-Дана функція реалізовує вставку вузла в список.\mbox{\Hypertarget{list_8c_a62e1de11705707198225314b854cf59e}\label{list_8c_a62e1de11705707198225314b854cf59e}} 
+\mbox{\Hypertarget{list_8c_a62e1de11705707198225314b854cf59e}\label{list_8c_a62e1de11705707198225314b854cf59e}} 
 \index{list.c@{list.c}!insertBeforeElement@{insertBeforeElement}}
 \index{insertBeforeElement@{insertBeforeElement}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{insertBeforeElement()}{insertBeforeElement()}}
 {\footnotesize\ttfamily void insert\+Before\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{list_8h_a8ff62746a396b270606ff04818b7e4ac}{Node}} $\ast$}]{elm,  }\item[{void $\ast$}]{value }\end{DoxyParamCaption})}
 
-Дана функція реалізовує вставку до вказаного нами елемента.\mbox{\Hypertarget{list_8c_a8cea1341b6c57010fa284528afa775db}\label{list_8c_a8cea1341b6c57010fa284528afa775db}} 
+\mbox{\Hypertarget{list_8c_a8cea1341b6c57010fa284528afa775db}\label{list_8c_a8cea1341b6c57010fa284528afa775db}} 
 \index{list.c@{list.c}!insertionSort@{insertionSort}}
 \index{insertionSort@{insertionSort}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{insertionSort()}{insertionSort()}}
 {\footnotesize\ttfamily void insertion\+Sort (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$$\ast$}]{list,  }\item[{char}]{criterion }\end{DoxyParamCaption})}
 
-Дана функція реалізовує сортування вставками за певним вказаним критерієм.\mbox{\Hypertarget{list_8c_a367f4d990d64c3caa27ce2f9116444af}\label{list_8c_a367f4d990d64c3caa27ce2f9116444af}} 
+\mbox{\Hypertarget{list_8c_a367f4d990d64c3caa27ce2f9116444af}\label{list_8c_a367f4d990d64c3caa27ce2f9116444af}} 
 \index{list.c@{list.c}!popBack@{popBack}}
 \index{popBack@{popBack}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{popBack()}{popBack()}}
 {\footnotesize\ttfamily void$\ast$ pop\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$}]{list }\end{DoxyParamCaption})}
 
-Дана функція реалізовує видалення з кінця двонапрямленого списку.\mbox{\Hypertarget{list_8c_a81b24f78837732ab61d22853069961fb}\label{list_8c_a81b24f78837732ab61d22853069961fb}} 
+\mbox{\Hypertarget{list_8c_a81b24f78837732ab61d22853069961fb}\label{list_8c_a81b24f78837732ab61d22853069961fb}} 
 \index{list.c@{list.c}!popFront@{popFront}}
 \index{popFront@{popFront}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{popFront()}{popFront()}}
 {\footnotesize\ttfamily void$\ast$ pop\+Front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$}]{list }\end{DoxyParamCaption})}
 
-Дана функція реалізовує видалення з початку двонапрямленого списку.\mbox{\Hypertarget{list_8c_abc38e07fa026e52a1f1169a51626e392}\label{list_8c_abc38e07fa026e52a1f1169a51626e392}} 
+\mbox{\Hypertarget{list_8c_abc38e07fa026e52a1f1169a51626e392}\label{list_8c_abc38e07fa026e52a1f1169a51626e392}} 
 \index{list.c@{list.c}!printDblLinkedList@{printDblLinkedList}}
 \index{printDblLinkedList@{printDblLinkedList}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{printDblLinkedList()}{printDblLinkedList()}}
 {\footnotesize\ttfamily void print\+Dbl\+Linked\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$}]{list }\end{DoxyParamCaption})}
 
-Дана функція виводить двонаправлений список потягів на екран. Виведення здійснюється шляхом друку поелементно.\mbox{\Hypertarget{list_8c_ae0fab5042994c1d37b43c790764421d0}\label{list_8c_ae0fab5042994c1d37b43c790764421d0}} 
+\mbox{\Hypertarget{list_8c_ae0fab5042994c1d37b43c790764421d0}\label{list_8c_ae0fab5042994c1d37b43c790764421d0}} 
 \index{list.c@{list.c}!printTrain@{printTrain}}
 \index{printTrain@{printTrain}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{printTrain()}{printTrain()}}
@@ -148,16 +147,15 @@ long \mbox{\hyperlink{list_8c_a12d5b6421b1b4450fbbf7817ad214220}{current\+Time\+
 \doxysubsubsection{\texorpdfstring{pushBack()}{pushBack()}}
 {\footnotesize\ttfamily void push\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{data_8h_a7ddf7ad711f86064b282da3906adbf38}{train}} $\ast$}]{value }\end{DoxyParamCaption})}
 
-Дана функція реалізовує вставку в кінець двонапрямленого списку.\mbox{\Hypertarget{list_8c_a6adbde5c05bf7bff80416d15fb764233}\label{list_8c_a6adbde5c05bf7bff80416d15fb764233}} 
+\mbox{\Hypertarget{list_8c_a6adbde5c05bf7bff80416d15fb764233}\label{list_8c_a6adbde5c05bf7bff80416d15fb764233}} 
 \index{list.c@{list.c}!pushFront@{pushFront}}
 \index{pushFront@{pushFront}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{pushFront()}{pushFront()}}
 {\footnotesize\ttfamily void push\+Front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a090760f07810b6308a1b7afae57ae58a}{Dbl\+Linked\+List}} $\ast$}]{list,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
 
-Дана функція реалізовує вставку в початок двонапрямленого списку.\mbox{\Hypertarget{list_8c_abc4f819d2f469f1f5f556e98791e6afc}\label{list_8c_abc4f819d2f469f1f5f556e98791e6afc}} 
+This is push\mbox{\Hypertarget{list_8c_abc4f819d2f469f1f5f556e98791e6afc}\label{list_8c_abc4f819d2f469f1f5f556e98791e6afc}} 
 \index{list.c@{list.c}!sortChar@{sortChar}}
 \index{sortChar@{sortChar}!list.c@{list.c}}
 \doxysubsubsection{\texorpdfstring{sortChar()}{sortChar()}}
 {\footnotesize\ttfamily int sort\+Char (\begin{DoxyParamCaption}\item[{char $\ast$}]{current,  }\item[{char $\ast$}]{next,  }\item[{int}]{poz,  }\item[{int}]{len }\end{DoxyParamCaption})}
 
-Дана функція реалізовує сортування.
