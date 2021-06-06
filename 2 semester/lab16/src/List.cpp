@@ -178,7 +178,7 @@ void List::ConcVec(vector<Train*> v2){
     trains.insert( trains.end(), v2.begin(), v2.end()); //В конец 1 вектор1 записывается вектор2 с начала до конца
 }
 
-struct sort_birds  //функтор сортировки
+struct sort_trains  //функтор сортировки
 {
 	bool operator() (Train* i, Train* j)
 	{ return (i->getNumber() < j->getNumber());}
