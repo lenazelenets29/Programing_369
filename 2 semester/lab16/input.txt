@@ -1,7 +1,0 @@
-1 A1000 y 20 Ukraine Germany Heat
-2 A1001 n 8 Ukraine Poland Electro 200 220
-1 A1002 n 15 Russia Poland Electro 
-3 A1003 y 40 Ukraine Russia Heat Wood 15000
-1 A1004 y 5 Germany Poland Heat
-3 A1005 n 38 Ukraine Belarus Heat Wood 23000
-3 A1006 y 28 Ukraine Albania Heat Coal 10000
